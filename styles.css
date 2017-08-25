@@ -1,0 +1,102 @@
+html {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  color: #333;
+  text-rendering: optimizeLegibility; }
+
+a {
+  color: #a4c639; }
+  a:hover {
+    color: #94b233; }
+
+.navbar {
+  margin-bottom: 0;
+  background-color: transparent; }
+  .navbar a {
+    color: #ccc; }
+    .navbar a:hover, .navbar a:focus {
+      color: #fff; }
+
+.navbar-toggle .icon-bar {
+  background-color: #eee; }
+
+.navbar-scrolling {
+  background-color: #262628;
+  transition: background-color .3s; }
+
+.nav > li > a:hover, .nav > li > a:focus {
+  background-color: transparent; }
+.nav > li > a.active {
+  border-top: 3px solid #a4c639;
+  padding-top: 12px; }
+
+.bg-hero {
+  background-image: url("http://cdn.magdeleine.co/wp-content/uploads/2015/04/5f468e98-1400x934.jpeg");
+  background-position: 0 bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  color: #ccc;
+  padding: 150px 0 100px; }
+  .bg-hero h1 {
+    font-size: 2.2rem;
+    font-weight: 400; }
+  .bg-hero h2 {
+    font-size: 1.17rem;
+    font-weight: 300;
+    line-height: 1.4; }
+
+.about, .projects, .contact {
+  padding: 40px 0; }
+  .about h3, .projects h3, .contact h3 {
+    margin-bottom: 20px; }
+
+.projects {
+  background-color: #e9eff3; }
+  .projects a.thumbnail {
+    padding: 5px;
+    border-color: transparent;
+    transition: background-color .3s ease-out .2s; }
+    .projects a.thumbnail:focus, .projects a.thumbnail:hover {
+      background-color: #a4c639; }
+
+.contact .social-media {
+  margin-top: 15px; }
+  .contact .social-media .btn {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 16px;
+    transition: .2s; }
+    .contact .social-media .btn:hover {
+      color: #fff;
+      border-color: transparent; }
+  .contact .social-media .twitter:hover {
+    background-color: #55acee; }
+  .contact .social-media .github:hover {
+    background-color: #4183c4; }
+  .contact .social-media .codepen:hover {
+    background-color: #555555; }
+  .contact .social-media .linkedin:hover {
+    background-color: #0077b5; }
+
+footer {
+  padding: 20px 0 10px;
+  color: #ccc;
+  background-color: #262628; }
+  footer .fa-heart {
+    color: #e22; }
+
+@media (max-width: 767px) {
+  .navbar {
+    background-color: #262628; }
+
+  .nav > li > a.active {
+    border-top: 0;
+    background-color: #a4c639;
+    color: #fff; }
+
+  .xs-text-center {
+    text-align: center; } }
+
+/*# sourceMappingURL=styles.css.map */

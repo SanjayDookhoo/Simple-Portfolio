@@ -1,0 +1,126 @@
+// Color variables
+$primary-color: #a4c639;
+$dark-color: #262628;
+
+html {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  color: #333;
+  text-rendering: optimizeLegibility;
+}
+a {
+  color: $primary-color;
+  &:hover {
+    color: darken($primary-color, 5%);
+  }
+}
+.navbar {
+  margin-bottom: 0;
+  background-color: transparent;
+  a {
+    color: #ccc;
+    &:hover, &:focus {
+      color: #fff;
+    }
+  }
+}
+.navbar-toggle .icon-bar {
+  background-color: #eee;
+}
+.navbar-scrolling {
+  background-color: $dark-color;
+  transition: background-color .3s;
+}
+.nav > li > a {
+  &:hover, &:focus {
+    background-color: transparent;
+  }
+  &.active {
+    border-top: 3px solid $primary-color;
+    padding-top: 12px;
+  }
+}
+.bg-hero {
+  background-image: url('http://cdn.magdeleine.co/wp-content/uploads/2015/04/5f468e98-1400x934.jpeg');
+  background-position: 0 bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  color: #ccc;
+  padding: 150px 0 100px;
+  h1 {
+    font-size: 2.2rem;
+    font-weight: 400;
+  }
+  h2 {
+    font-size: 1.17rem;
+    font-weight: 300;
+    line-height: 1.4;
+  }
+}
+.about, .projects, .contact {
+  padding: 40px 0;
+  h3 {
+    margin-bottom: 20px;
+  }
+}
+.projects {
+  background-color: #e9eff3;
+  a.thumbnail {
+    padding: 5px;
+    border-color: transparent;
+    transition: background-color .3s ease-out .2s;
+    &:focus, &:hover {
+      background-color: $primary-color;
+    }
+  }
+}
+.contact {
+  .social-media {
+    margin-top: 15px;
+    .btn {
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      font-size: 16px;
+      transition: .2s;
+      &:hover {
+        color: #fff;
+        border-color: transparent;
+      }
+    }
+    .twitter:hover {
+      background-color: #55acee;
+    }
+    .github:hover {
+      background-color: #4183c4;
+    }
+    .codepen:hover {
+      background-color: #555555;
+    }
+    .linkedin:hover {
+      background-color: #0077b5;
+    }
+  }
+}
+footer {
+  padding: 20px 0 10px;
+  color: #ccc;
+  background-color: $dark-color;
+  .fa-heart {
+    color: #e22;
+  }
+}
+@media (max-width: 767px) {
+  .navbar {
+    background-color: $dark-color;
+  }
+  .nav > li > a.active {
+    border-top: 0;
+    background-color: $primary-color;
+    color: #fff;
+  }
+  .xs-text-center {
+    text-align: center;
+  }
+}
