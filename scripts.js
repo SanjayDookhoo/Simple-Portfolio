@@ -28,4 +28,71 @@ $(document).ready(function () {
     }
   });
   
+  $('#bt_app').change(function() {
+    $('.website').css({
+        transform: 'scale(0.5)',
+        opacity: 0.4
+    });
+    $('.systems').css({
+        transform: 'scale(0.5)',
+        opacity: 0.4
+    });
+    $('.app').css({
+        transform: 'scale(1)',
+        opacity: 1
+    });
+  });
+  
+  $('#bt_website').change(function() {
+    $('.systems').css({
+        transform: 'scale(0.5)',
+        opacity: 0.4
+    });
+    $('.app').css({
+        transform: 'scale(0.5)',
+        opacity: 0.4
+    });
+    $('.website').css({
+        transform: 'scale(1)',
+        opacity: 1
+    });
+  });
+  
+  $('#bt_systems').change(function() {
+    $('.website').css({
+        transform: 'scale(0.5)',
+        opacity: 0.4
+    });
+    $('.app').css({
+        transform: 'scale(0.5)',
+        opacity: 0.4
+    });
+    $('.systems').css({
+        transform: 'scale(1)',
+        opacity: 1
+    });
+  });
+  
+  $('#bt_todos').change(function() {
+    $('.website').css({
+        transform: 'scale(1)',
+        opacity: 1
+    });
+    $('.app').css({
+        transform: 'scale(1)',
+        opacity: 1
+    });
+    $('.systems').css({
+        transform: 'scale(1)',
+        opacity: 1
+    });
+  });
+  
+  $('.thumbnail').hover(function(){
+    $(this).children(".cust-caption").slideDown();
+  },
+  function(){
+    $(this).children(".cust-caption").fadeOut();
+  });
+  
 });

@@ -1,17 +1,11 @@
-*{
-  magin: 0; 
-  padding: 0;
-}
-html, body {
-  background-color: #f1f1f1;
-}
+
 section {
   width: 780px;
   height: auto;
   margin: 50px auto;
 }
 
-section label {
+label {
   width: 175px;
   padding: 10px 2px;
   margin-left: 10px;
@@ -27,9 +21,6 @@ section label {
 }
 
 #galeria img {
-  float: left;
-  width:250px;
-  padding: 5px;
   transition: all .4s;
 }
 
@@ -42,20 +33,34 @@ input {
  display: none;
 } 
 
-#bt_website:checked ~ #galeria .systems,
-#bt_website:checked ~ #galeria .app {
-   opacity: .4;
-   transform: scale(0.5);
+.shadow{
+  box-shadow: 7px 7px 7px #666;
+   position : relative;
+  transition : all 0.2s;
+  top : 0;
+}
+.cust-caption{
+  display:none;
+  position: absolute;
+  background-color: rgba(30,30,30,0.8);
+  padding : 10px;
+  color:#ddd;
+  margin:5px;
+  bottom:0;
+  left:0;
+  right:0;
+  height : 60%;
+  margin:5px;
+  overflow-y : auto;
 }
 
-#bt_systems:checked ~ #galeria .website,
-#bt_systems:checked ~ #galeria .app {
-  opacity: .4;
-  transform: scale(0.5);
+.up-hover:hover {
+  top :-5px;
+  box-shadow: 15px 15px 15px #777;
 }
 
-#bt_app:checked ~ #galeria .website,
-#bt_app:checked ~ #galeria .systems{
-  opacity: .4;
-  transform: scale(0.5);
+.cust-caption a{
+  color:white;
+  
+  text-shadow:1px 1px 2px black;
 }
