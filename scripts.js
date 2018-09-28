@@ -28,14 +28,32 @@ $(document).ready(function () {
     }
   });
   
+
+  
   $('#bt_app').change(function() {
     $('.website').css({
         transform: 'scale(0.5)',
-        opacity: 0.4
+        opacity: 0.2
     });
-    $('.systems').css({
+    $('.system').css({
         transform: 'scale(0.5)',
-        opacity: 0.4
+        opacity: 0.2
+    });
+    $('.c').css({
+        transform: 'scale(0.5)',
+        opacity: 0.2
+    });
+    $('.java').css({
+        transform: 'scale(0.5)',
+        opacity: 0.2
+    });
+	$('.python').css({
+        transform: 'scale(0.5)',
+        opacity: 0.2
+    });
+	$('.lisp').css({
+        transform: 'scale(0.5)',
+        opacity: 0.2
     });
     $('.app').css({
         transform: 'scale(1)',
@@ -44,13 +62,29 @@ $(document).ready(function () {
   });
   
   $('#bt_website').change(function() {
-    $('.systems').css({
+    $('.system').css({
         transform: 'scale(0.5)',
-        opacity: 0.4
+        opacity: 0.2
     });
     $('.app').css({
         transform: 'scale(0.5)',
-        opacity: 0.4
+        opacity: 0.2
+    });
+    $('.c').css({
+        transform: 'scale(0.5)',
+        opacity: 0.2
+    });
+    $('.java').css({
+        transform: 'scale(0.5)',
+        opacity: 0.2
+    });
+	$('.python').css({
+        transform: 'scale(0.5)',
+        opacity: 0.2
+    });
+	$('.lisp').css({
+        transform: 'scale(0.5)',
+        opacity: 0.2
     });
     $('.website').css({
         transform: 'scale(1)',
@@ -61,19 +95,35 @@ $(document).ready(function () {
   $('#bt_systems').change(function() {
     $('.website').css({
         transform: 'scale(0.5)',
-        opacity: 0.4
+        opacity: 0.2
     });
     $('.app').css({
         transform: 'scale(0.5)',
-        opacity: 0.4
+        opacity: 0.2
     });
-    $('.systems').css({
+    $('.c').css({
+        transform: 'scale(0.5)',
+        opacity: 0.2
+    });
+    $('.java').css({
+        transform: 'scale(0.5)',
+        opacity: 0.2
+    });
+	$('.python').css({
+        transform: 'scale(0.5)',
+        opacity: 0.2
+    });
+	$('.lisp').css({
+        transform: 'scale(0.5)',
+        opacity: 0.2
+    });
+    $('.system').css({
         transform: 'scale(1)',
         opacity: 1
     });
   });
   
-  $('#bt_todos').change(function() {
+  $('#bt_all').change(function() {
     $('.website').css({
         transform: 'scale(1)',
         opacity: 1
@@ -82,7 +132,148 @@ $(document).ready(function () {
         transform: 'scale(1)',
         opacity: 1
     });
-    $('.systems').css({
+    $('.c').css({
+        transform: 'scale(1)',
+        opacity: 1
+    });
+    $('.java').css({
+        transform: 'scale(1)',
+        opacity: 1
+    });
+	$('.python').css({
+        transform: 'scale(1)',
+        opacity: 1
+    });
+	$('.lisp').css({
+        transform: 'scale(1)',
+        opacity: 1
+    });
+    $('.system').css({
+        transform: 'scale(1)',
+        opacity: 1
+    });
+  });
+  
+  $('#bt_java').change(function() {
+    $('.website').css({
+        transform: 'scale(0.5)',
+        opacity: 0.2
+    });
+    $('.app').css({
+        transform: 'scale(0.5)',
+        opacity: 0.2
+    });
+    $('.c').css({
+        transform: 'scale(0.5)',
+        opacity: 0.2
+    });
+	$('.python').css({
+        transform: 'scale(0.5)',
+        opacity: 0.2
+    });
+	$('.lisp').css({
+        transform: 'scale(0.5)',
+        opacity: 0.2
+    });
+    $('.system').css({
+        transform: 'scale(0.5)',
+        opacity:0.2
+    });
+	$('.java').css({
+        transform: 'scale(1)',
+        opacity: 1
+    });
+  });
+  
+  $('#bt_c').change(function() {
+    $('.website').css({
+        transform: 'scale(0.5)',
+        opacity: 0.2
+    });
+    $('.app').css({
+        transform: 'scale(0.5)',
+        opacity: 0.2
+    });
+    $('.java').css({
+        transform: 'scale(0.5)',
+        opacity: 0.2
+    });
+	$('.python').css({
+        transform: 'scale(0.5)',
+        opacity: 0.2
+    });
+	$('.lisp').css({
+        transform: 'scale(0.5)',
+        opacity: 0.2
+    });
+    $('.system').css({
+        transform: 'scale(0.5)',
+        opacity: 0.2
+    });
+    $('.c').css({
+        transform: 'scale(1)',
+        opacity: 1
+    });
+  });
+  
+  $('#bt_python').change(function() {
+	  console.log("python");
+    $('.website').css({
+        transform: 'scale(0.5)',
+        opacity: 0.2
+    });
+    $('.app').css({
+        transform: 'scale(0.5)',
+        opacity: 0.2
+    });
+    $('.c').css({
+        transform: 'scale(0.5)',
+        opacity: 0.2
+    });
+    $('.java').css({
+        transform: 'scale(0.5)',
+        opacity: 0.2
+    });
+	$('.lisp').css({
+        transform: 'scale(0.5)',
+        opacity: 0.2
+    });
+    $('.system').css({
+        transform: 'scale(0.5)',
+        opacity: 0.2
+    });
+	$('.python').css({
+        transform: 'scale(1)',
+        opacity: 1
+    });
+  });
+  
+  $('#bt_lisp').change(function() {
+    $('.website').css({
+        transform: 'scale(0.5)',
+        opacity: 0.2
+    });
+    $('.app').css({
+        transform: 'scale(0.5)',
+        opacity: 0.2
+    });
+    $('.c').css({
+        transform: 'scale(0.5)',
+        opacity: 0.2
+    });
+    $('.java').css({
+        transform: 'scale(0.5)',
+        opacity: 0.2
+    });
+	$('.python').css({
+        transform: 'scale(0.5)',
+        opacity: 0.2
+    });
+    $('.system').css({
+        transform: 'scale(0.5)',
+        opacity: 0.2
+    });
+	$('.lisp').css({
         transform: 'scale(1)',
         opacity: 1
     });
